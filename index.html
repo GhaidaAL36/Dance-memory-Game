@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dance Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="winner-box">
+        <h1 id="winner-title"></h1>
+        <h3 id="winner-subtitle"></h3>
+        <img src="" id="winner-img" />
+        <button id="play-again">Play again</button>
+      </div>
+
+      <div id="timer"></div>
+      <div class="game-box">
+        <div class="dancer-box">
+          <img src="assets/dancer-start.svg" id="dancer-move" />
+          <img src="" id="player" />
+        </div>
+
+        <div class="btns-box">
+          <button data-move="up" class="up">
+            <i class="fas fa-caret-up"></i>
+          </button>
+          <button data-move="left" class="left">
+            <i class="fas fa-caret-left"></i>
+          </button>
+          <button data-move="down" class="down">
+            <i class="fas fa-caret-down"></i>
+          </button>
+          <button data-move="right" class="right">
+            <i class="fas fa-caret-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="info">
+          <h1>Follow the Flag</h1>
+          <p>
+            Watch the flag and follow its direction.focused and keep the sequence going.
+          </p>
+        </div>
+        <button class="ready-btn">I'm ready</button>
+      </div>
+    </div>
+    <audio id="dance-sound" src="assets/dance-music.mp3"></audio>
+
+  </body>
+</html>
